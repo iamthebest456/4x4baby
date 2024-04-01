@@ -1,0 +1,78 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    max-height: 100%;
+}
+
+canvas {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #5996d3, #8cbed6);
+    image-rendering: optimizeSpeed;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.menu-outer {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+.menu-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.menu-content {
+    display: block;
+    width: 400px;
+    background: rgba(0, 1, 0, 0.5);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#stats {
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    display: block;
+    left: 0; right: 0;
+}
+#stats dt {
+    float: left;
+    clear: left;
+    width: 180px;
+    text-align: right;
+    font-weight: bold;
+}
+#stats dt:after {
+    content: ":";
+}
+#stats dd {
+    margin-left: 180px;
+    padding-left: 10px;
+}
+
+#leftPedal,
+#rightPedal {
+    width: 15%;
+    height: 20%;
+    position: fixed;
+    bottom: 5%;
+    background-image: url(../img/pedal.png);
+    background-size: 100% 100%;
+}
+
+#leftPedal {
+    left: 5%;
+}
+
+#rightPedal {
+    right: 5%;
+}
